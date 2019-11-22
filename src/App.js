@@ -7,6 +7,7 @@ import Login from './Components/Auth/Login';
 import Start from './Components/TestBE/TestGet'
 import CreepyLightText from './Components/ThreeEffects/CreepyLight/CreepyLightText';
 import Map from './Components/map/Map';
+import Secret from './Components/Secret/Secret'
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
 
       {/* <Route exact path = "/" component={Map}/> */}
       <Route exact path = "/" component={Home}/>
+      <Route exact path="/12447" component={Secret}/>
       <Route exact path="/Map" component={Map}/>
       <Route exact path = "/Game" component={MainChannelRenderer}/>
       <Route exact path= "/Login" component={Login}/>
