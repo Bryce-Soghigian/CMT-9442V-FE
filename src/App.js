@@ -8,6 +8,7 @@ import Start from './Components/TestBE/TestGet'
 import CreepyLightText from './Components/ThreeEffects/CreepyLight/CreepyLightText';
 import Map from './Components/map/Map';
 import Secret from './Components/Secret/Secret'
+import "./App.css"
 
 
 function App() {
