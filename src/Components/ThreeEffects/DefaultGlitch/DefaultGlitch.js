@@ -150,35 +150,35 @@ function animate() {
                     <Sound
                      url={glitched_tones}
                      playStatus={Sound.status.PLAYING}
-                     volume={11}
+                     volume={71}
                      loop
                      />  
                 ) : props.audio==="flatwoods" ? (
                     <Sound
                      url={flatwoods}
                      playStatus={Sound.status.PLAYING}
-                     volume={11}
+                     volume={71}
                      loop
                      />  
                 ) : props.audio==="ns1" ? (
                     <Sound
                      url={ns1}
                      playStatus={Sound.status.PLAYING}
-                     volume={11}
+                     volume={71}
                      loop
                      />  
                 ) : props.audio==="ns2" ? (
                     <Sound
                      url={ns2}
                      playStatus={Sound.status.PLAYING}
-                     volume={11}
+                     volume={71}
                      loop
                      />  
                 ) : props.audio==="ns3" ? (
                     <Sound
                      url={ns3}
                      playStatus={Sound.status.PLAYING}
-                     volume={11}
+                     volume={71}
                      loop
 
                      />  
