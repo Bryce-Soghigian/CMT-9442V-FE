@@ -46,6 +46,7 @@ S.Nav = styled.div`
 `
 
 S.Descript = styled.div`
+    text-align:center;
     font-size: 43px;
     font-family: 'Rokkitt', serif;
     color: #2E281F;
