@@ -5,5 +5,7 @@
     color:#44C553;
     font-size:8rem;
     font-family: 'Geo', sans-serif;
+    /* z-index: 1; */
+    opacity: 0.99;
 
 }

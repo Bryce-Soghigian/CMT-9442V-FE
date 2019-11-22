@@ -15,6 +15,8 @@ z-index:69;
 position: absolute;
 right:0;
 left:0;
+  opacity: 0.99;
+  filter: alpha(opacity=30);
 width:100vw;
 height:100vh;
 border:10px;
@@ -95,9 +97,7 @@ export default function MainChannelRenderer() {
                 if(tbd === "12447"&& state.channel === 45){
                 // If number is secret code
                     Swal.fire({
-                        // 'Secret Link',
-                        // 'https://cmt-9442v1.netlify.com/12447',
-                        // 'success',
+
                         icon:'success',
                         position: 'center',
                         title: 'https://cmt-9442v1.netlify.com/12447',
@@ -174,7 +174,7 @@ Ñ̷̽̽̾̈́̔̔̅̓̆͗͋̋͛̌̋͌̈́̈̈̌̀̅̈͗̋̈͛͑̒̕̚̚͠͠͝͝͝�
     )
 }else if(state.glitchtype ==="DefaultTextGlitch"){
 return (
-    <div
+    <Div
       onKeyDown={e => {
         KeyHandler(e);
       }}
@@ -182,11 +182,11 @@ return (
     >
         <DefaultTextGlitch background={state.background} text={state.text} channel={state.id} audio={state.audio}/>
         {/* <DefaultPurple background={state.background} text={state.text} channel={state.id}/> */}
-    </div>
+    </Div>
 )
 }else if (state.glitchtype === "ComicBook"){
     return(
-        <div
+        <Div
             onKeyDown={e => {
                 KeyHandler(e);
             }}
@@ -194,11 +194,11 @@ return (
         >
 
             <ComicBookEffect background={state.background} text={state.text} channel={state.id} audio={state.audio}/>
-        </div>
+        </Div>
     )
 }else if(state.glitchtype === "ComicBookNoGeo"){
     return (
-        <div
+        <Div
             onKeyDown={e => {
                 KeyHandler(e);
             }}
@@ -206,11 +206,11 @@ return (
         >
             
             <ComicBookNoGeo background={state.background} text={state.text} channel={state.id} audio={state.audio}/>
-        </div>
+        </Div>
     )
 }else if(state.glitchtype === "ComicBookText"){
     return (
-        <div
+        <Div
             onKeyDown={e => {
                 KeyHandler(e);
             }}
@@ -218,18 +218,18 @@ return (
         >
             
             <ComicBookEffectText background={state.background} text={state.text} channel={state.id} audio={state.audio}/>
-        </div>
+        </Div>
     )
 }else if(state.glitchtype === "CreepyLightText"){
     return(
-        <div
+        <Div
             onKeyDown={e => {
                 KeyHandler(e);
             }}
             tabIndex="1"
         >
             <CreepyLightText background={state.background} text={state.text} channel={state.id} audio={state.audio}/>
-        </div>
+        </Div>
 
     )
 }
