@@ -92,7 +92,7 @@ export default function MainChannelRenderer() {
         function startCountdown(){
             countingDown = true
             setTimeout(() => {
-                if(tbd === "12447"){
+                if(tbd === "12447"&& state.channel === 45){
                 // If number is secret code
                     Swal.fire({
                         // 'Secret Link',

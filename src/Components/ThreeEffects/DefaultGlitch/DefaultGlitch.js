@@ -157,7 +157,7 @@ function animate() {
                     <Sound
                      url={flatwoods}
                      playStatus={Sound.status.PLAYING}
-                     volume={21}
+                     volume={11}
                      loop
                      />  
                 ) : props.audio==="ns1" ? (
