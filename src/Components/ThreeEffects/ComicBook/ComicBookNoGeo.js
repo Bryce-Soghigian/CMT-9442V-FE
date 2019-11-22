@@ -86,49 +86,49 @@ export default function ComicBookEffect(props) {
                 {props.audio==="tv_static" ? (
                      <Sound
                      url={tv_static}
-                     volume={71}
+                     //volume={71}
                      playStatus={Sound.status.PLAYING}
                      loop
                      />  
                 ) : props.audio==="radio_static" ? (
                     <Sound
                      url={radio_static}
-                     volume={71}
+                     //volume={71}
                      playStatus={Sound.status.PLAYING}
                      loop
                      />  
                 ) : props.audio==="glitched_tones" ? (
                     <Sound
                      url={glitched_tones}
-                     volume={71}
+                     //volume={71}
                      playStatus={Sound.status.PLAYING}
                      loop
                      />  
                 ) : props.audio==="flatwoods" ? (
                     <Sound
                      url={flatwoods}
-                     volume={71}
+                     //volume={71}
                      playStatus={Sound.status.PLAYING}
                      loop
                      />  
                 ) : props.audio==="ns1" ? (
                     <Sound
                      url={ns1}
-                     volume={71}
+                     //volume={71}
                      playStatus={Sound.status.PLAYING}
                      loop
                      />  
                 ) : props.audio==="ns2" ? (
                     <Sound
                      url={ns2}
-                     volume={71}
+                     //volume={71}
                      playStatus={Sound.status.PLAYING}
                      loop
                      />  
                 ) : props.audio==="ns3" ? (
                     <Sound
                      url={ns3}
-                     volume={71}
+                     //volume={71}
                      playStatus={Sound.status.PLAYING}
                      loop
                      />  
