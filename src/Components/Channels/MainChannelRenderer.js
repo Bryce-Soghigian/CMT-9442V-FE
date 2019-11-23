@@ -22,7 +22,7 @@ height:100vh;
 border:10px;
 `
 // haha lol
-export default function MainChannelRenderer() {
+export default function MainChannelRenderer(props) {
     const [state,setState] = useState({})
     const [loading, setLoading] = useState(false)
     
@@ -167,7 +167,7 @@ Ñ̷̽̽̾̈́̔̔̅̓̆͗͋̋͛̌̋͌̈́̈̈̌̀̅̈͗̋̈͛͑̒̕̚̚͠͠͝͝͝�
 }else if(state.glitchtype==="static"){
     return(
         <Div onKeyDown={e => {KeyHandler(e)}} tabIndex="1">            
-            <DefaultGlitch background={state.background} text={state.text} channel={state.channel} audio={state.audio}/>
+            <DefaultGlitch background={state.background} text={state.text} channel={state.channel} audio={state.audio} volume={props.volume}/>
             {/* <DefaultClass background={state.background} text={state.text} channel={state.id}/> */}
         </Div>
         

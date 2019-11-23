@@ -1,0 +1,4 @@
+.Display-None{
+    opacity: 0.01;
+    filter: alpha(opacity=1);
+}
