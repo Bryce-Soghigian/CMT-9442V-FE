@@ -1,11 +1,25 @@
 import React from 'react';
 import styled from "styled-components";
-import { withRouter } from "react-router-dom";
+import { withRouter,Link } from "react-router-dom";
 
 import tvImg from "../assets/images/tv.png"
 import barsImg from "../assets/images/nosignal2.jpg"
 
 const S = {}
+
+
+const SettingsBtn =styled(Link)`
+    width: 245px;
+    height: 100%;
+    border-radius: 12px;
+    font-family: 'Rokkitt', serif;
+    font-size: 48px;
+    border: none;
+    font-weight: 600;
+    box-shadow: 10px 10px 20px #debcab;
+    cursor: pointer;
+
+`
 
 S.Container = styled.div`
     width: 100vw;
@@ -147,6 +161,7 @@ function Main(props){
             <S.ButtonContainer>
                 <S.PlayBtn onClick = {() => goToGame()}>PLAY</S.PlayBtn>
                 <S.SignUpBtn onClick = {() => goToSignUp()}>Sign up</S.SignUpBtn>
+                <SettingsBtn to ="/settings">Settings</SettingsBtn>
             </S.ButtonContainer>
 
         </S.Container>

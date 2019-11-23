@@ -164,7 +164,7 @@ Ñ̷̽̽̾̈́̔̔̅̓̆͗͋̋͛̌̋͌̈́̈̈̌̀̅̈͗̋̈͛͑̒̕̚̚͠͠͝͝͝�
 
 
     )
-}else if(state.glitchtype==="static"){
+    }else if(state.glitchtype==="static"){
     return(
         <Div onKeyDown={e => {KeyHandler(e)}} tabIndex="1">            
             <DefaultGlitch background={state.background} text={state.text} channel={state.channel} audio={state.audio} volume={props.volume}/>
@@ -180,7 +180,7 @@ return (
       }}
       tabIndex="1"
     >
-        <DefaultTextGlitch background={state.background} text={state.text} channel={state.id} audio={state.audio}/>
+        <DefaultTextGlitch background={state.background} text={state.text} channel={state.id} audio={state.audio} volume={props.volume}/>
         {/* <DefaultPurple background={state.background} text={state.text} channel={state.id}/> */}
     </Div>
 )
@@ -193,7 +193,7 @@ return (
             tabIndex="1"
         >
 
-            <ComicBookEffect background={state.background} text={state.text} channel={state.id} audio={state.audio}/>
+            <ComicBookEffect background={state.background} text={state.text} channel={state.id} audio={state.audio} volume={props.volume}/>
         </Div>
     )
 }else if(state.glitchtype === "ComicBookNoGeo"){
@@ -205,7 +205,7 @@ return (
             tabIndex="1"
         >
             
-            <ComicBookNoGeo background={state.background} text={state.text} channel={state.id} audio={state.audio}/>
+            <ComicBookNoGeo background={state.background} text={state.text} channel={state.id} audio={state.audio} volume={props.volume}/>
         </Div>
     )
 }else if(state.glitchtype === "ComicBookText"){
@@ -217,7 +217,7 @@ return (
             tabIndex="1"
         >
             
-            <ComicBookEffectText background={state.background} text={state.text} channel={state.id} audio={state.audio}/>
+            <ComicBookEffectText background={state.background} text={state.text} channel={state.id} audio={state.audio} volume={props.volume}/>
         </Div>
     )
 }else if(state.glitchtype === "CreepyLightText"){
@@ -228,7 +228,7 @@ return (
             }}
             tabIndex="1"
         >
-            <CreepyLightText background={state.background} text={state.text} channel={state.id} audio={state.audio}/>
+            <CreepyLightText background={state.background} text={state.text} channel={state.id} audio={state.audio} volume={props.volume}/>
         </Div>
 
     )

@@ -50,7 +50,7 @@ export default function Settings() {
                     <Button to="/">Go Back to Main Menu</Button>
 
                             <div className="Display-None">
-                            <MainChannelRenderer style = {{opacity:0}} volume={volume}/>
+                            <MainChannelRenderer  volume={volume}/>
                             </div>
                     
                 </div>
