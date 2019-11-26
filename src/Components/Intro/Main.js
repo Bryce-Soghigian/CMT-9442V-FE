@@ -136,7 +136,8 @@ S.Button = styled.button`
 
 function Main(props){
     const [counter,setCounter] = useState(0)
-    if(counter === 0){
+    // if(counter === 0){
+        if(document.documentElement.clientWidth <= 500 ){
         setTimeout(() => {
             Swal.fire({
                 icon:'info',
@@ -147,7 +148,8 @@ function Main(props){
               })
               setCounter(1)
         }, 100);
-    }
+    // }
+        }
 
 
     const goToGame = () => {
