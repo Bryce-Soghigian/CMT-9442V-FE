@@ -1,6 +1,7 @@
-import React from 'react';
+import React,{useState} from 'react';
 import styled from "styled-components";
 import { withRouter,Link } from "react-router-dom";
+import Swal from 'sweetalert2'
 
 import tvImg from "../assets/images/tv.png"
 import barsImg from "../assets/images/nosignal2.jpg"
@@ -18,7 +19,13 @@ const SettingsBtn =styled(Link)`
     font-weight: 600;
     box-shadow: 10px 10px 20px #debcab;
     cursor: pointer;
+    text-decoration:none;
+:visited{
+    color:black;
+    text-decoration:none;
 
+
+}
 `
 
 S.Container = styled.div`
@@ -128,6 +135,20 @@ S.Button = styled.button`
     `
 
 function Main(props){
+    const [counter,setCounter] = useState(0)
+    if(counter === 0){
+        setTimeout(() => {
+            Swal.fire({
+                icon:'info',
+                position: 'center',
+                title: 'Currently Only Desktop support is availible. Currently working on mobile support',
+                showConfirmButton: false,
+                timer: 5000
+              })
+              setCounter(1)
+        }, 100);
+    }
+
 
     const goToGame = () => {
         props.history.push("/Game")

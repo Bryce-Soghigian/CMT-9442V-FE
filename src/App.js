@@ -10,11 +10,13 @@ import Map from './Components/map/Map';
 import Secret from './Components/Secret/Secret'
 import Settings from './Components/settings/Settings'
 import "./App.css"
+import Swal from 'sweetalert2'
 
 
 function App() {
 
   const [test, setTest] = useState("a");
+
 
   const change = e => {
     e.preventDefault();
@@ -23,6 +25,9 @@ function App() {
     // console.log("app.js", e.target);
     setTest(e.key);
   };
+
+
+
 
 
   return (
