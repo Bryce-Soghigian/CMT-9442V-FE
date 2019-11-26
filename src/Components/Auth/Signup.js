@@ -179,7 +179,7 @@ Login
                   type='password'
                 />
                 <ButtonSML onClick={handleLoginSubmit}>
-                  Login
+                  Signup
                 </ButtonSML>
             </form>
         </Right>
