@@ -1,11 +1,32 @@
-import React from 'react';
+import React,{useState} from 'react';
 import styled from "styled-components";
-import { withRouter } from "react-router-dom";
+import { withRouter,Link } from "react-router-dom";
+import Swal from 'sweetalert2'
 
 import tvImg from "../assets/images/tv.png"
 import barsImg from "../assets/images/nosignal2.jpg"
 
 const S = {}
+
+
+const SettingsBtn =styled(Link)`
+    width: 245px;
+    height: 100%;
+    border-radius: 12px;
+    font-family: 'Rokkitt', serif;
+    font-size: 48px;
+    border: none;
+    font-weight: 600;
+    box-shadow: 10px 10px 20px #debcab;
+    cursor: pointer;
+    text-decoration:none;
+:visited{
+    color:black;
+    text-decoration:none;
+
+
+}
+`
 
 S.Container = styled.div`
     width: 100vw;
@@ -114,6 +135,22 @@ S.Button = styled.button`
     `
 
 function Main(props){
+    const [counter,setCounter] = useState(0)
+    // if(counter === 0){
+        if(document.documentElement.clientWidth <= 500 ){
+        setTimeout(() => {
+            Swal.fire({
+                icon:'info',
+                position: 'center',
+                title: 'Currently Only Desktop support is availible. Currently working on mobile support',
+                showConfirmButton: false,
+                timer: 5000
+              })
+              setCounter(1)
+        }, 100);
+    // }
+        }
+
 
     const goToGame = () => {
         props.history.push("/Game")
@@ -147,6 +184,7 @@ function Main(props){
             <S.ButtonContainer>
                 <S.PlayBtn onClick = {() => goToGame()}>PLAY</S.PlayBtn>
                 <S.SignUpBtn onClick = {() => goToSignUp()}>Sign up</S.SignUpBtn>
+                <SettingsBtn to ="/settings">Settings</SettingsBtn>
             </S.ButtonContainer>
 
         </S.Container>

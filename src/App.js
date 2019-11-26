@@ -8,12 +8,15 @@ import Start from './Components/TestBE/TestGet'
 import CreepyLightText from './Components/ThreeEffects/CreepyLight/CreepyLightText';
 import Map from './Components/map/Map';
 import Secret from './Components/Secret/Secret'
+import Settings from './Components/settings/Settings'
 import "./App.css"
+import Swal from 'sweetalert2'
 
 
 function App() {
 
   const [test, setTest] = useState("a");
+
 
   const change = e => {
     e.preventDefault();
@@ -22,6 +25,9 @@ function App() {
     // console.log("app.js", e.target);
     setTest(e.key);
   };
+
+
+
 
 
   return (
@@ -41,8 +47,9 @@ function App() {
       <Route exact path = "/Game" component={MainChannelRenderer}/>
       <Route exact path= "/Login" component={Login}/>
       <Route exact path = "/Signup" component={Signup}/>
-      
+      <Route exact path = "/Settings" component= {Settings}/>
     </div>
+
 
   );
 }
