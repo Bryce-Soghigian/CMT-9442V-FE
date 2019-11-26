@@ -10,6 +10,9 @@ const S = {}
 
 
 const SettingsBtn =styled(Link)`
+&:focus {
+    outline-color:none;
+}
     color:black;
     width: 245px;
     height: 100%;
@@ -37,6 +40,7 @@ S.Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    :focus {outline:0;}
 
     h1 {
         font-family: 'Rokkitt', serif;
@@ -44,6 +48,7 @@ S.Container = styled.div`
         color: #2E281F;
         margin: 0px;
         margin-top: 40px;
+        :focus {outline:0;}
     }
 `
 
@@ -55,6 +60,7 @@ S.Nav = styled.div`
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    :focus {outline:0;}
 
     span {
         font-size: 42px;
@@ -63,6 +69,7 @@ S.Nav = styled.div`
         margin-right: 30px;
         margin-top: 10px;
         cursor: pointer;
+        :focus {outline:0;}
 
     }
 `
@@ -72,6 +79,7 @@ S.Descript = styled.div`
     font-size: 43px;
     font-family: 'Rokkitt', serif;
     color: #2E281F;
+    :focus {outline:0;}
 `
 
 S.TvGrid = styled.div`
@@ -82,6 +90,7 @@ S.TvGrid = styled.div`
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
+    :focus {outline:0;}
 `
 
     S.Img = styled.img`
@@ -90,6 +99,7 @@ S.TvGrid = styled.div`
         grid-column: 1/11;
         width: 549px;
         height: 360px;
+        :focus {outline:0;}
     `
 
     S.Img2 = styled.img`
@@ -101,6 +111,7 @@ S.TvGrid = styled.div`
         height: 324px;
         justify-self: center;
         margin-top: 10px;
+        :focus {outline:0;}
     `
 
 S.ButtonContainer = styled.div`
@@ -111,6 +122,7 @@ S.ButtonContainer = styled.div`
     width: 549px;
     height: 71px;
     margin-top: 30px;
+    :focus {outline:0;}
 `
 
 S.Button = styled.button`
@@ -123,16 +135,19 @@ S.Button = styled.button`
     font-weight: 600;
     box-shadow: 10px 10px 20px #debcab;
     cursor: pointer;
+    :focus {outline:0;}
 `
 
     S.PlayBtn = styled(S.Button)`
         background-color: #77EE19;
         font-size: 48px;
+        :focus {outline:0;}
     `
 
     S.SignUpBtn = styled(S.Button)`
         background-color: #BFC096;
         font-size: 42px;
+        :focus {outline:0;}
     `
 
 function Main(props){
