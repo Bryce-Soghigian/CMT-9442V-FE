@@ -10,6 +10,7 @@ const S = {}
 
 
 const SettingsBtn =styled(Link)`
+    color:black;
     width: 245px;
     height: 100%;
     border-radius: 12px;
@@ -136,19 +137,19 @@ S.Button = styled.button`
 
 function Main(props){
     const [counter,setCounter] = useState(0)
-    // if(counter === 0){
+
         if(document.documentElement.clientWidth <= 500 ){
         setTimeout(() => {
             Swal.fire({
                 icon:'info',
                 position: 'center',
-                title: 'Currently Only Desktop support is availible. Currently working on mobile support',
+                title: 'Currently Only Desktop support is availible',
                 showConfirmButton: false,
                 timer: 5000
               })
-              setCounter(1)
+
         }, 100);
-    // }
+
         }
 
 
