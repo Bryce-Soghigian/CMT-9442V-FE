@@ -6,6 +6,12 @@ import Swal from 'sweetalert2'
 import tvImg from "../assets/images/tv.png"
 import barsImg from "../assets/images/nosignal2.jpg"
 
+
+
+
+
+
+//=================Vlads Code=========================//
 const S = {}
 
 
@@ -149,23 +155,26 @@ S.Button = styled.button`
         font-size: 42px;
         :focus {outline:0;}
     `
+//========Bryces Styled Components====================//
+const MobileDiv = styled.div`
+background:#AAF7FF;
+width:100vw;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+
+`
+const H1 = styled.h1`
+
+
+`
+
 
 function Main(props){
     const [counter,setCounter] = useState(0)
 
-        if(document.documentElement.clientWidth <= 500 ){
-        setTimeout(() => {
-            Swal.fire({
-                icon:'info',
-                position: 'center',
-                title: 'Currently Only Desktop support is availible',
-                showConfirmButton: false,
-                timer: 5000
-              })
-
-        }, 100);
-
-        }
 
 
     const goToGame = () => {
@@ -176,35 +185,46 @@ function Main(props){
     const goToSignUp = () => {
         props.history.push("Signup")
     }
+    if(document.documentElement.clientWidth <= 500 ){
+              return(
+                  <MobileDiv>
+                      <H1>Head to your nearest desktop computer!</H1>
+                      <p>Sorry CMT's interface isn't quite ready for mobile devices like yours.</p>
+                  </MobileDiv>
+              )
 
 
-    return(
-        <S.Container>
-            <S.Nav>
-                <span onClick={() => {localStorage.removeItem("token")}}>
-                    Logout
-                </span>
-            </S.Nav>
+    }else{
+        return(
+            <S.Container>
+                <S.Nav>
+                    <span onClick={() => {localStorage.removeItem("token")}}>
+                        Logout
+                    </span>
+                </S.Nav>
+    
+                <h1>CMT-9442V</h1>
+    
+                <S.Descript>
+                    A game for those<br/>who hear voices<br/>in the static
+                </S.Descript>
+    
+                <S.TvGrid>
+                    <S.Img src = {tvImg} />
+                    <S.Img2 src = {barsImg}/>
+                </S.TvGrid>
+    
+                <S.ButtonContainer>
+                    <S.PlayBtn onClick = {() => goToGame()}>PLAY</S.PlayBtn>
+                    <S.SignUpBtn onClick = {() => goToSignUp()}>Sign up</S.SignUpBtn>
+                    <SettingsBtn to ="/settings">Settings</SettingsBtn>
+                </S.ButtonContainer>
+    
+            </S.Container>
+        )
+    }
 
-            <h1>CMT-9442V</h1>
 
-            <S.Descript>
-                A game for those<br/>who hear voices<br/>in the static
-            </S.Descript>
-
-            <S.TvGrid>
-                <S.Img src = {tvImg} />
-                <S.Img2 src = {barsImg}/>
-            </S.TvGrid>
-
-            <S.ButtonContainer>
-                <S.PlayBtn onClick = {() => goToGame()}>PLAY</S.PlayBtn>
-                <S.SignUpBtn onClick = {() => goToSignUp()}>Sign up</S.SignUpBtn>
-                <SettingsBtn to ="/settings">Settings</SettingsBtn>
-            </S.ButtonContainer>
-
-        </S.Container>
-    )
 }
 
 export default withRouter(Main);
