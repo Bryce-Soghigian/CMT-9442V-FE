@@ -186,15 +186,17 @@ function Main(props){
         props.history.push("Signup")
     }
     if(document.documentElement.clientWidth <= 500 ){
+        
               return(
                   <MobileDiv>
                       <H1>Head to your nearest desktop computer!</H1>
-                      <p>Sorry CMT's interface isn't quite ready for mobile devices like yours.This Game was developed for Desktop users.</p>
+                      <p>Sorry CMT's interface isn't quite ready for mobile devices like yours.This Game was developed for Desktop users.If you are a desktop user and you are seeing this, expand this window and click ME </p>
+                      
                   </MobileDiv>
               )
 
 
-    }else{
+    }else if(document.documentElement.clientWidth >= 500){
         return(
             <S.Container>
                 <S.Nav>
