@@ -190,7 +190,7 @@ function Main(props){
               return(
                   <MobileDiv>
                       <H1>Head to your nearest desktop computer!</H1>
-                      <p>Sorry CMT's interface isn't quite ready for mobile devices like yours.This Game was developed for Desktop users.If you are a desktop user and you are seeing this, expand this window and click ME </p>
+                      <p>Sorry CMT's interface isn't quite ready for mobile devices like yours.This Game was developed for Desktop users. </p>
                       
                   </MobileDiv>
               )
