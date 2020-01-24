@@ -15,12 +15,15 @@
     "react-scripts": "3.2.0",
     "react-sound": "^1.2.0",
     "react-spring": "^8.0.27",
+    "react-test-renderer": "^16.12.0",
     "react-three-fiber": "^3.0.13",
     "styled-components": "^4.4.1",
     "sweetalert2": "^9.3.17",
     "three": "^0.110.0"
   },
   "scripts": {
+    "cypress": "cypress open",
+    "cypress:all": "cypress run",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -40,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "cypress": "^3.8.2"
   }
 }

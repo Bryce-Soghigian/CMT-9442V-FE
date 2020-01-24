@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot test for Login page 1`] = `
+<div>
+  <div>
+    <div
+      className="sc-bdVaJa eieRRE"
+    >
+      <div
+        className="sc-bwzfXH eJTtlt"
+      >
+        CS23
+      </div>
+      <div
+        className="sc-htpNat dEAMjy"
+      >
+        <a
+          aria-current="page"
+          className="sc-bxivhb iALsri active"
+          href="/"
+          onClick={[Function]}
+          style={Object {}}
+        >
+          Home
+        </a>
+        <a
+          aria-current={null}
+          className="sc-bxivhb iALsri"
+          href="/Game"
+          onClick={[Function]}
+        >
+          Start
+        </a>
+        <a
+          aria-current={null}
+          className="sc-bxivhb iALsri"
+          href="/Team"
+          onClick={[Function]}
+        >
+          Team
+        </a>
+        <a
+          aria-current={null}
+          className="sc-bxivhb sc-ifAKCX iKiprO"
+          href="/Signup"
+          onClick={[Function]}
+        >
+          Sign Up
+        </a>
+        <a
+          aria-current={null}
+          className="sc-bxivhb sc-ifAKCX iKiprO"
+          href="/login"
+          onClick={[Function]}
+        >
+          <button
+            className="sc-EHOje Dunsg btn"
+            onClick={[Function]}
+            type="submit"
+          >
+            Logout
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    className="sc-dnqmqq gloquH"
+  >
+    <div
+      className="sc-gzVnrw bsYEKC"
+    >
+      <h1
+        className="heading"
+      >
+        Log in to your account.
+      </h1>
+      <form
+        className="form-container"
+        onSubmit={[Function]}
+      >
+        <input
+          className="field"
+          name="username"
+          onChange={[Function]}
+          placeholder="Username"
+          value=""
+        />
+        <input
+          className="field"
+          name="password"
+          onChange={[Function]}
+          placeholder="Password"
+          type="password"
+          value=""
+        />
+        <button
+          className="sc-iwsKbI kRiPHL"
+          onClick={[Function]}
+        >
+          Login
+        </button>
+      </form>
+    </div>
+    <div
+      className="sc-htoDjs lfrPUP col4"
+    >
+      <div
+        className="heading-container"
+      >
+        <h1>
+          New around here?
+        </h1>
+        <strong>
+          <p>
+            Please Create a 
+          </p>
+          <p>
+            new user account.
+          </p>
+        </strong>
+        <a
+          className="sc-bZQynM ctnkiy"
+          href="/Signup"
+          onClick={[Function]}
+        >
+          Signup
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -4,13 +4,12 @@ import Home from './Components/Intro/Main';
 import MainChannelRenderer from './Components/Channels/MainChannelRenderer'
 import Signup from './Components/Auth/Signup';
 import Login from './Components/Auth/Login';
-import Start from './Components/TestBE/TestGet'
-import CreepyLightText from './Components/ThreeEffects/CreepyLight/CreepyLightText';
+
 import Map from './Components/map/Map';
 import Secret from './Components/Secret/Secret'
 import Settings from './Components/settings/Settings'
 import "./App.css"
-import Swal from 'sweetalert2'
+
 
 
 function App() {
