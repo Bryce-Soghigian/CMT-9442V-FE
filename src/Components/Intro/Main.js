@@ -1,6 +1,7 @@
-import React,{useState} from 'react';
+import React,{useState,useEffect} from 'react';
 import styled from "styled-components";
 import { withRouter,Link } from "react-router-dom";
+import axios from 'axios'
 import Swal from 'sweetalert2'
 
 import tvImg from "../assets/images/tv.png"
@@ -173,7 +174,14 @@ const H1 = styled.h1`
 
 
 function Main(props){
-    const [counter,setCounter] = useState(0)
+useEffect(() => {
+axios.get("https://ourtvgame.herokuapp.com/api/adv/initialize")
+.then( (res) => {
+    console.log(res.data)
+}).catch(err => {
+    console.error(err)
+})
+}, [])
 
 
 
